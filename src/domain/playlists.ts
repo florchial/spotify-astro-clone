@@ -46,6 +46,33 @@ export const playlists: Playlist[] = [
           "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80",
         artists: ["Daydream", "The Waves"],
       },
+      {
+        id: "pl5",
+        albumId: 5,
+        title: "Moody Vibes",
+        color: colors.blue,
+        cover:
+          "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
+        artists: ["Ocean Eyes","Daydream", "The Waves"],
+      },
+      {
+        id: "pl6",
+        albumId: 5,
+        title: "Study Beats",
+        color: colors.purple,
+        cover:
+          "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
+        artists: ["Nightfall", "Ocean Eyes"],
+      },
+      {
+        id: "pl7",
+        albumId: 5,
+        title: "Morning Light",
+        color: colors.green,
+        cover:
+          "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
+        artists: ["Blush Tones", "Sunset Riders"],
+      },
     
 ];
 

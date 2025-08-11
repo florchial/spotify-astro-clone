@@ -1,6 +1,16 @@
 ---
+import PlaylistItemCard from "../components/PlaylistItemCard.astro";
+import { playlists } from "../domain/playlists";
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-	<slot />
+	<div id="playlist-container" class="relative transition-all duration-1000 bg-green-600">
+	
+	<div class="relative z-10 px-6">
+		<h1 class="text-2xl">Good Morning</h1>
+		{playlists.map((playlist) => (
+			<PlaylistItemCard playlist={playlist} />
+		))}
+	</div>
+	</div>
 </Layout>
