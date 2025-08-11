@@ -59,6 +59,11 @@ A simple Spotify-inspired music app built with [Astro](https://astro.build/) and
 - [Astro](https://astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
+## 🎶 Music Data
+
+The app includes a collection of invented songs with metadata such as title, artist, album, and duration for illustration purposes. The data is stored in a TypeScript file for easy access and manipulation.
+Music: [Purple Planet Music](www.purple-planet.com)
+
 ## 📄 License
 
 This project is for educational purposes only and is not affiliated with Spotify. Feel free to use and modify the code as you wish.
