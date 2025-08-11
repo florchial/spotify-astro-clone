@@ -48,3 +48,19 @@ export const playlists: Playlist[] = [
       },
     
 ];
+
+export const morePlaylists = playlists.map((item) => ({
+  ...item,
+  id: item.id + "_more",
+}))
+
+export const sidebarPlaylists = playlists.map((item) => ({
+  ...item,
+  id: item.id + "_side",
+}))
+
+export const allPlaylists = [
+  ...playlists,
+  ...morePlaylists,
+  ...sidebarPlaylists,
+]
