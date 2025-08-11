@@ -26,25 +26,25 @@ export const playlists: Playlist[] = [
         color: colors.pink,
         cover:
           "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-        artists: ["Synth Pulse", "Blush Tones"],
+        artists: ["Blush Tones", "Ocean Eyes"],
       },
       {
         id: "pl3",
-        albumId: 3,
+        albumId: 4,
         title: "Ocean Sounds",
         color: colors.blue,
         cover:
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80",
-        artists: ["Blue Horizon", "Ocean Eyes"],
+        artists: ["Nightfall", "Ocean Eyes"],
       },
       {
         id: "pl4",
-        albumId: 4,
+        albumId: 5,
         title: "Nature Walk",
         color: colors.green,
         cover:
           "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80",
-        artists: ["Green Leaf", "Fresh Start"],
+        artists: ["Daydream", "The Waves"],
       },
     
 ];
