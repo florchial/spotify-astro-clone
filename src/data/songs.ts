@@ -3,7 +3,7 @@ export type Song = {
   title: string;
   artist: string;
   album: string;
-  albumId?: number; // albumId is optional
+  albumId: number;
   coverUrl: string;
   duration: string;
   color: string;
