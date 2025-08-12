@@ -1,7 +1,12 @@
 ---
-import PlaylistCard from "@/components/PlaylistCard.astro";
-import { playlists } from "@/domain/playlists";
+import { allPlaylists } from "@/domain/playlists";
+import { songs } from "@/domain/songs";
 import Layout from "@/layouts/Layout.astro";
+
+const { id } = Astro.params;
+
+const playlist = allPlaylists.find((p) => p.id === id);
+const playlistSongs = songs.filter((song) => playlist?.albums.includes(song.albumId));
 ---
 
 <Layout>
@@ -12,7 +17,7 @@ import Layout from "@/layouts/Layout.astro";
     <div class="relative z-10 px-6 py-10">
       <h1 class="text-3xl font-bold">Good morning</h1>
       <div class="flex flex-wrap gap-4 mt-6">
-        {playlists.map((playlist) => <PlaylistCard playlist={playlist}/>)}
+       
       </div>
     </div>
     <div

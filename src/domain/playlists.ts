@@ -2,7 +2,7 @@ import { colors } from "@/domain/colors";
 
 export interface Playlist {
   id: string;
-  albumId: number;
+  albums: number[];
   title: string;
   color: (typeof colors)[keyof typeof colors];
   cover: string;
@@ -12,7 +12,7 @@ export interface Playlist {
 export const playlists: Playlist[] = [
       {
         id: "pl1",
-        albumId: 1,
+        albums: [1, 2],
         title: "Chill Evening",
         color: colors.orange,
         cover:
@@ -21,7 +21,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl2",
-        albumId: 2,
+        albums: [3, 16],
         title: "City Vibes",
         color: colors.pink,
         cover:
@@ -30,7 +30,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl3",
-        albumId: 4,
+        albums: [21, 16],
         title: "Ocean Sounds",
         color: colors.blue,
         cover:
@@ -39,7 +39,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl4",
-        albumId: 5,
+        albums: [1, 26],
         title: "Nature Walk",
         color: colors.green,
         cover:
@@ -48,7 +48,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl5",
-        albumId: 5,
+        albums: [1, 26, 16],
         title: "Moody Vibes",
         color: colors.blue,
         cover:
@@ -57,16 +57,16 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl6",
-        albumId: 5,
+        albums: [16, 26],
         title: "Study Beats",
         color: colors.purple,
         cover:
           "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-        artists: ["Nightfall", "Ocean Eyes"],
+        artists: ["Nightfall", "Daydream"],
       },
       {
         id: "pl7",
-        albumId: 5,
+        albums: [3, 2],
         title: "Morning Light",
         color: colors.green,
         cover:
