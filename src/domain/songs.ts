@@ -13,10 +13,10 @@ export const songs: Song[] = [
   {
     id: 1,
     title: "Sunset Drive",
-    artist: "The Wave",
+    artist: "The Waves",
     album: "Evening Glow",
     albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
     duration: "3:45",
     color: "orange"
   },
@@ -26,7 +26,7 @@ export const songs: Song[] = [
     artist: "The Waves",
     album: "Evening Glow",
     albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
     duration: "4:12",
     color: "orange"
   },
@@ -36,7 +36,7 @@ export const songs: Song[] = [
     artist: "The Waves",
     album: "Evening Glow",
     albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
     duration: "5:03",
     color: "orange"
   },
@@ -46,7 +46,7 @@ export const songs: Song[] = [
     artist: "The Waves",
     album: "Evening Glow",
     albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
     duration: "3:32",
     color: "orange"
   },
@@ -56,7 +56,7 @@ export const songs: Song[] = [
     artist: "The Waves",
     album: "Evening Glow",
     albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
+    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
     duration: "4:20",
     color: "orange"
   },

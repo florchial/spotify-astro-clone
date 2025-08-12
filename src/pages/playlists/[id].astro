@@ -15,8 +15,8 @@ const playlist = playlistBy(id!);
         class="relative flex flex-col h-full bg-zinc-900 overflow-x-hidden gap-8"
         transition:name={`playlist-${id}-card`}
       >
-        <header class="flex gap-3 p-3 font-light mt-12">
-          <picture class="flex-none aspect-square w-52 h-52">
+        <header class="flex gap-6 p-10 font-light mt-12">
+          <picture class="flex-none w-52 h-52">
             <img
               src={playlist.cover}
               alt={`Cover of ${playlist.title}`}
@@ -31,7 +31,7 @@ const playlist = playlistBy(id!);
                 {playlist?.title}
               </span>
             </h1>
-
+              <!--TODO: Pasar a grilla -->
             <div class="flex flex-1 items-end text-gray-400">
               <span transition:name={`playlist-${playlist.id}-artists`}>{artists(playlist)}</span>
             </div>
@@ -40,6 +40,22 @@ const playlist = playlistBy(id!);
             </div>
           </div>
         </header>
+
+        <main class="px-10">
+          <ul class="flex flex-col gap-4">
+            {songsBy(playlist).map(song => (
+              <li class="flex items-center gap-10">
+                <img src={song.coverUrl} alt={`Cover of ${song.title}`} class="w-16 h-16 object-cover" />
+                <div class="flex flex-col">
+                  <span class="text-white">{song.title}</span>
+                  <span class="text-gray-400">{song.artist}</span>
+                </div>
+                  <span class="text-gray-500">{song.album}</span>
+                  <span class="text-gray-500">{song.duration}</span>
+              </li>
+            ))}
+          </ul>
+        </main>
         
         <div class="relative z-10 px-6 py-10" />
         <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10"></div>
