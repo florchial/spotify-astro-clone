@@ -1,4 +1,4 @@
-import { colors } from "./colors";
+import { colors } from "@/domain/colors";
 
 export interface Playlist {
   id: string;
