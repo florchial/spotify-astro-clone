@@ -25,6 +25,6 @@ const { playlist } = Astro.props;
   </picture>
   <div class="flex flex-auto flex-col">
     <h4 class="text-sm" transition:name={`playlist-${playlist?.id}-title`}>{playlist.title}</h4>
-    <span class="text-xs text-gray-400 pb-3">{artists(playlist)}</span>
+    <span class="text-xs text-gray-400 pb-3" transition:name={`playlist-${playlist?.id}-artists`}>{artists(playlist)}</span>
   </div>
 </a>
