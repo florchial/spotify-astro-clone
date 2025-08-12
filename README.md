@@ -5,6 +5,9 @@ A simple Spotify-inspired music app built with [Astro](https://astro.build/) and
 ## 🚀 Features
 
 - Responsive layout with sidebar, main content, and player footer
+- Playlist details page with dynamic routing (`/playlists/[id]`)
+- Interactive UI components
+- Color themes for playlists
 - Styled using Tailwind CSS
 - Modular component structure
 
@@ -17,22 +20,31 @@ A simple Spotify-inspired music app built with [Astro](https://astro.build/) and
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   │   └── AsideMenu.astro
+│   │   ├── AsideMenu.astro
+│   │   ├── PlaylistCard.astro
+│   │   ├── SideMenuItem.astro
+│   │   └── SideMenuPlaylistItem.astro
+│   ├── domain/
+│   │   ├── colors.ts
+│   │   ├── playlists.ts
+│   │   └── songs.ts
 │   ├── icons/
-│   │   ├── Home.astro
-│   │   ├── Library.astro
-│   │   └── Search.astro
+│   │   ├── HomeIcon.astro
+│   │   ├── LibraryIcon.astro
+│   │   └── SearchIcon.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   ├── pages/
-│   │   └── index.astro
+│   │   ├── index.astro
+│   │   └── playlists/
+│   │       └── [id].astro
 │   └── styles/
 │       └── global.css
 ├── package.json
 └── astro.config.mjs
 ```
 
-## 🧑‍💻 Getting Started
+## 🏃🏻‍♀️ Getting Started
 
 1. **Install dependencies:**
    ```sh
@@ -59,10 +71,21 @@ A simple Spotify-inspired music app built with [Astro](https://astro.build/) and
 - [Astro](https://astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
+## 👩🏻‍💻 Usage
+
+- Browse playlists from the sidebar and main view.
+- Click on a playlist to view its details, including cover, artists, song list, total duration, and song count.
+- Songs are filtered and grouped by playlist and album.
+
+## 📊 Data Structure
+
+Each playlist references albums and artists, and each song includes metadata such as title, artist, album, duration, and color.
+
 ## 🎶 Music Data
 
-The app includes a collection of invented songs with metadata such as title, artist, album, and duration for illustration purposes. The data is stored in a TypeScript file for easy access and manipulation.
-Music: [Purple Planet Music](www.purple-planet.com)
+- The app includes a collection of invented songs with metadata such as title, artist, album, and duration for illustration purposes. 
+- The data is stored in a TypeScript file for easy access and manipulation.
+- All images and music data are for educational use only. Music: [Purple Planet Music](www.purple-planet.com)
 
 ## 📄 License
 
