@@ -1,12 +1,12 @@
 ---
 import type { Playlist } from "@/domain/playlists";
+import { artists } from "@/domain/playlists";
 
 interface Props {
   playlist: Playlist;
 }
 const { playlist } = Astro.props;
 
-const artists = playlist.artists.join(", ");
 ---
 
 <a
@@ -18,12 +18,13 @@ const artists = playlist.artists.join(", ");
   <picture class="flex-none aspect-square w-full h-auto">
     <img
       src={playlist.cover}
-      alt={`Cover of ${playlist.title} by ${artists}`}
+      alt={`Cover of ${playlist.title} by ${artists(playlist)}`}
       class="rounded-md object-cover w-full h-full"
+      transition:name={`playlist-${playlist.id}-image`}
     />
   </picture>
   <div class="flex flex-auto flex-col">
-    <h4 class="text-sm">{playlist.title}</h4>
-    <span class="text-xs text-gray-400 pb-3">{artists}</span>
+    <h4 class="text-sm" transition:name={`playlist-${playlist?.id}-title`}>{playlist.title}</h4>
+    <span class="text-xs text-gray-400 pb-3">{artists(playlist)}</span>
   </div>
 </a>

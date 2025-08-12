@@ -1,4 +1,5 @@
 import { colors } from "@/domain/colors";
+import { songs } from "./songs";
 
 export interface Playlist {
   id: string;
@@ -91,3 +92,28 @@ export const allPlaylists = [
   ...morePlaylists,
   ...sidebarPlaylists,
 ]
+
+export const playlistBy = (id: string) => allPlaylists.find((p) => p.id === id);
+
+export const artists = (playlist: Playlist) => playlist.artists.join(", ");
+
+export const songsBy = (playlist: Playlist) =>
+  songs.filter((song) => playlist?.albums.includes(song.albumId));
+
+export const amountOfSongs = (playlist: Playlist) => songsBy(playlist).length;
+
+export const duration = (playlist: Playlist): string => {
+  const totalSeconds = songsBy(playlist)
+    .map(song => {
+      const [min, sec] = song.duration.split(":").map(Number);
+      return min * 60 + sec;
+    })
+    .reduce((acc, curr) => acc + curr, 0);
+
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+
+  return hours > 0
+    ? `${hours}h ${minutes}m`
+    : `${minutes}m`;
+};
