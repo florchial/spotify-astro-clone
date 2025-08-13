@@ -1,6 +1,8 @@
 ---
 import AsideMenu from "@/components/AsideMenu.astro";
+import { Player } from "@/components/Player";
 import "@/styles/global.css";
+import type { nan } from "astro:schema";
 import { ClientRouter } from "astro:transitions";
 ---
 
@@ -18,7 +20,9 @@ import { ClientRouter } from "astro:transitions";
         <slot />
       </main>
 
-      <footer class="[grid-area:player] min-h-[100px]"></footer>
+      <footer class="[grid-area:player] min-h-[100px]">
+        <Player client:load transition:name="player" transition:persist/>
+      </footer>
     </div>
   </body>
 

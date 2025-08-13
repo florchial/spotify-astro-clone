@@ -9,6 +9,7 @@ export const colors = {
   purple: { accent: "#df24ff", dark: "#581c87" },
   pink: { accent: "#f33b73", dark: "#831843" },
   emerald: { accent: "#0c6e54", dark: "#064e3b" },
-  rose: { accent: "#ed2377", dark: "#871b48" },
+  rose: { accent: "#F79CC2", dark: "#871b48" },
+  coral: { accent: "#FF6F61", dark: "#BF4A3A" },
   gray: { accent: "#555555", dark: "#27272a" },
 };
