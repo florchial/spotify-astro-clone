@@ -15,7 +15,7 @@ export const playlists: Playlist[] = [
         id: "pl1",
         albums: [1, 2],
         title: "Chill Evening",
-        color: colors.indigo,
+        color: colors.blue,
         cover:
           "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=500&q=80",
         artists: ["The Waves", "Sunset Riders"],
@@ -33,7 +33,7 @@ export const playlists: Playlist[] = [
         id: "pl3",
         albums: [21, 16],
         title: "Summer Sounds",
-        color: colors.rose,
+        color: colors.cyan,
         cover:
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80",
         artists: ["Nightfall", "Ocean Eyes"],
@@ -51,7 +51,7 @@ export const playlists: Playlist[] = [
         id: "pl5",
         albums: [1, 26, 16],
         title: "Moody Vibes",
-        color: colors.green,
+        color: colors.brown,
         cover:
           "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=80",
         artists: ["Ocean Eyes","Daydream", "The Waves"],
@@ -60,7 +60,7 @@ export const playlists: Playlist[] = [
         id: "pl6",
         albums: [16, 26],
         title: "Study Beats",
-        color: colors.yellow,
+        color: colors.olive,
         cover:
           "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
         artists: ["Ocean Eyes","Daydream"],
