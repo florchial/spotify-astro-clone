@@ -9,16 +9,16 @@ interface Props {
 const { playlist } = Astro.props;
 ---
 
-<article class="group relative">
+<article class="group relative rounded-md hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-500/20">
   <div
     class="absolute right-4 bottom-22 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10"
   >
-    <CardPlayButton client:visible playlist={playlist} />
+    <CardPlayButton client:visible id={playlist.id} />
   </div>
   <a
     href={`/playlists/${playlist.id}`}
     class="playlist-card transition-all duration-300 flex relative gap-4 h-62
-  p-2 rounded-md hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-500/20 w-44 flex-col"
+  p-2  w-44 flex-col"
     transition:name={`playlist-${playlist.id}-card`}
   >
     <picture class="flex-none">
