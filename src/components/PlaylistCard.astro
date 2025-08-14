@@ -15,7 +15,7 @@ const { playlist } = Astro.props;
   <div
     class="absolute right-4 bottom-22 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10"
   >
-    <CardPlayButton client:visible id={playlist.id} />
+    <CardPlayButton client:load id=`${playlist.id}` />
   </div>
   <a
     href={`/playlists/${playlist.id}`}
