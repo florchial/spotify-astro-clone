@@ -22,7 +22,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl2",
-        albums: [3, 16],
+        albums: [3, 6],
         title: "City Vibes",
         color: colors.coral,
         cover:
@@ -31,7 +31,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl3",
-        albums: [21, 16],
+        albums: [5, 4],
         title: "Summer Sounds",
         color: colors.cyan,
         cover:
@@ -40,7 +40,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl4",
-        albums: [1, 26],
+        albums: [1, 6],
         title: "Nature Walk",
         color: colors.emerald,
         cover:
@@ -49,7 +49,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl5",
-        albums: [1, 26, 16],
+        albums: [1, 6, 4],
         title: "Moody Vibes",
         color: colors.brown,
         cover:
@@ -58,7 +58,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: "pl6",
-        albums: [16, 26],
+        albums: [4, 6],
         title: "Study Beats",
         color: colors.olive,
         cover:

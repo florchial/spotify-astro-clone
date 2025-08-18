@@ -165,7 +165,7 @@ export const songs: Song[] = [
     title: "Blue Horizon",
     artist: "Ocean Eyes",
     album: "Deep Blue",
-    albumId: 16,
+    albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
     duration: "5:12",
     color: "blue"
@@ -175,7 +175,7 @@ export const songs: Song[] = [
     title: "Purple Rain",
     artist: "Ocean Eyes",
     album: "Deep Blue",
-    albumId: 16,
+    albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
     duration: "4:33",
     color: "blue"
@@ -185,7 +185,7 @@ export const songs: Song[] = [
     title: "Green Meadow",
     artist: "Ocean Eyes",
     album: "Deep Blue",
-    albumId: 16,
+    albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
     duration: "3:49",
     color: "blue"
@@ -195,7 +195,7 @@ export const songs: Song[] = [
     title: "Red Ember",
     artist: "Ocean Eyes",
     album: "Deep Blue",
-    albumId: 16,
+    albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
     duration: "4:44",
     color: "blue"
@@ -205,7 +205,7 @@ export const songs: Song[] = [
     title: "Teal Waves",
     artist: "Ocean Eyes",
     album: "Deep Blue",
-    albumId: 16,
+    albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
     duration: "3:55",
     color: "blue"
@@ -215,7 +215,7 @@ export const songs: Song[] = [
     title: "Indigo Dreams",
     artist: "Nightfall",
     album: "Stars",
-    albumId: 21,
+    albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
     duration: "4:27",
     color: "indigo"
@@ -225,7 +225,7 @@ export const songs: Song[] = [
     title: "Emerald Glow",
     artist: "Nightfall",
     album: "Stars",
-    albumId: 21,
+    albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
     duration: "4:05",
     color: "indigo"
@@ -235,7 +235,7 @@ export const songs: Song[] = [
     title: "Rose Petals",
     artist: "Nightfall",
     album: "Stars",
-    albumId: 21,
+    albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
     duration: "3:59",
     color: "indigo"
@@ -245,7 +245,7 @@ export const songs: Song[] = [
     title: "Gray Mist",
     artist: "Nightfall",
     album: "Stars",
-    albumId: 21,
+    albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
     duration: "4:15",
     color: "indigo"
@@ -255,7 +255,7 @@ export const songs: Song[] = [
     title: "Orange Glow",
     artist: "Nightfall",
     album: "Stars",
-    albumId: 21,
+    albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
     duration: "3:45",
     color: "indigo"
@@ -265,7 +265,7 @@ export const songs: Song[] = [
     title: "Pink Clouds",
     artist: "Daydream",
     album: "Soft Skies",
-    albumId: 26,
+    albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
     duration: "4:07",
     color: "pink"
@@ -275,7 +275,7 @@ export const songs: Song[] = [
     title: "Yellow Glow",
     artist: "Daydream",
     album: "Soft Skies",
-    albumId: 26,
+    albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
     duration: "4:20",
     color: "pink"
@@ -285,7 +285,7 @@ export const songs: Song[] = [
     title: "Blue Sky",
     artist: "Daydream",
     album: "Soft Skies",
-    albumId: 26,
+    albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
     duration: "5:00",
     color: "pink"
@@ -295,7 +295,7 @@ export const songs: Song[] = [
     title: "Purple Twilight",
     artist: "Daydream",
     album: "Soft Skies",
-    albumId: 26,
+    albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
     duration: "4:35",
     color: "pink"
@@ -305,7 +305,7 @@ export const songs: Song[] = [
     title: "Green Horizon",
     artist: "Daydream",
     album: "Soft Skies",
-    albumId: 26,
+    albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
     duration: "3:53",
     color: "pink"
