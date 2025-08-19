@@ -11,7 +11,6 @@ export function CardPlayButton({id}) {
 
     //TODO: Implement play function to set current song and playlist
     // For now, just set isPlaying to true
-    
     const play = (playlist) => {setIsPlaying(true)}
 
     const togglePlay = () => {
