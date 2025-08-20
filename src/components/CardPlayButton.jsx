@@ -9,8 +9,6 @@ export function CardPlayButton({id}) {
 
     const pause = () => setIsPlaying(false)
 
-    //TODO: Implement play function to set current song and playlist
-    // For now, just set isPlaying to true
     const play = (playlist) => {setIsPlaying(true)}
 
     const togglePlay = () => {
@@ -24,7 +22,7 @@ export function CardPlayButton({id}) {
             .then((data) => {
                 const { playlist, songs } = data
                 play()
-                setCurrentState({ playlist, songs: songs, song: songs[0] })
+                setCurrentState({ playlist: playlist, songs: songs, song: songs[0] })
             })
     }
 
