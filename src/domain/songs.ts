@@ -17,7 +17,7 @@ export const songs: Song[] = [
     album: "Evening Glow",
     albumId: 1,
     coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "3:45",
+    duration: "2:01",
     color: "orange"
   },
   {
@@ -27,7 +27,7 @@ export const songs: Song[] = [
     album: "Evening Glow",
     albumId: 1,
     coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "4:12",
+    duration: "1:41",
     color: "orange"
   },
   {
@@ -37,7 +37,7 @@ export const songs: Song[] = [
     album: "Evening Glow",
     albumId: 1,
     coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "5:03",
+    duration: "30:12",
     color: "orange"
   },
   {
@@ -47,7 +47,7 @@ export const songs: Song[] = [
     album: "Evening Glow",
     albumId: 1,
     coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "3:32",
+    duration: "1:39",
     color: "orange"
   },
   {
@@ -57,7 +57,7 @@ export const songs: Song[] = [
     album: "Evening Glow",
     albumId: 1,
     coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "4:20",
+    duration: "1:47",
     color: "orange"
   },
   {
@@ -67,7 +67,7 @@ export const songs: Song[] = [
     album: "Light Trails",
     albumId: 2,
     coverUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=500&q=80",
-    duration: "3:50",
+    duration: "1:31",
     color: "yellow"
   },
   {
@@ -77,7 +77,7 @@ export const songs: Song[] = [
     album: "Light Trails",
     albumId: 2,
     coverUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=500&q=80",
-    duration: "4:10",
+    duration: "2:18",
     color: "yellow"
   },
   {
@@ -87,7 +87,7 @@ export const songs: Song[] = [
     album: "Light Trails",
     albumId: 2,
     coverUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=500&q=80",
-    duration: "3:56",
+    duration: "1:35",
     color: "yellow"
   },
   {
@@ -97,7 +97,7 @@ export const songs: Song[] = [
     album: "Light Trails",
     albumId: 2,
     coverUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=500&q=80",
-    duration: "4:25",
+    duration: "1:25",
     color: "yellow"
   },
   {
@@ -107,7 +107,7 @@ export const songs: Song[] = [
     album: "Light Trails",
     albumId: 2,
     coverUrl: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=500&q=80",
-    duration: "5:00",
+    duration: "2:26",
     color: "yellow"
   },
   {
@@ -117,7 +117,7 @@ export const songs: Song[] = [
     album: "Soft Lights",
     albumId: 3,
     coverUrl: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
-    duration: "3:44",
+    duration: "2:33",
     color: "rose"
   },
   {
@@ -127,7 +127,7 @@ export const songs: Song[] = [
     album: "Soft Lights",
     albumId: 3,
     coverUrl: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
-    duration: "4:18",
+    duration: "2:26",
     color: "rose"
   },
   {
@@ -137,7 +137,7 @@ export const songs: Song[] = [
     album: "Soft Lights",
     albumId: 3,
     coverUrl: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
-    duration: "3:37",
+    duration: "3:56",
     color: "rose"
   },
   {
@@ -147,7 +147,7 @@ export const songs: Song[] = [
     album: "Soft Lights",
     albumId: 3,
     coverUrl: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
-    duration: "4:05",
+    duration: "1:41",
     color: "pink"
   },
   {
@@ -157,7 +157,7 @@ export const songs: Song[] = [
     album: "Soft Lights",
     albumId: 3,
     coverUrl: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=500&q=80",
-    duration: "4:22",
+    duration: "2:10",
     color: "rose"
   },
   {
@@ -167,7 +167,7 @@ export const songs: Song[] = [
     album: "Deep Blue",
     albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
-    duration: "5:12",
+    duration: "1:51",
     color: "blue"
   },
   {
@@ -177,7 +177,7 @@ export const songs: Song[] = [
     album: "Deep Blue",
     albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
-    duration: "4:33",
+    duration: "1:13",
     color: "blue"
   },
   {
@@ -187,7 +187,7 @@ export const songs: Song[] = [
     album: "Deep Blue",
     albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
-    duration: "3:49",
+    duration: "2:37",
     color: "blue"
   },
   {
@@ -197,7 +197,7 @@ export const songs: Song[] = [
     album: "Deep Blue",
     albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
-    duration: "4:44",
+    duration: "2:06",
     color: "blue"
   },
   {
@@ -207,7 +207,7 @@ export const songs: Song[] = [
     album: "Deep Blue",
     albumId: 4,
     coverUrl: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=500&q=80",
-    duration: "3:55",
+    duration: "1:39",
     color: "blue"
   },
   {
@@ -217,7 +217,7 @@ export const songs: Song[] = [
     album: "Stars",
     albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-    duration: "4:27",
+    duration: "1:23",
     color: "indigo"
   },
   {
@@ -227,7 +227,7 @@ export const songs: Song[] = [
     album: "Stars",
     albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-    duration: "4:05",
+    duration: "1:49",
     color: "indigo"
   },
   {
@@ -237,7 +237,7 @@ export const songs: Song[] = [
     album: "Stars",
     albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-    duration: "3:59",
+    duration: "3:27",
     color: "indigo"
   },
   {
@@ -247,7 +247,7 @@ export const songs: Song[] = [
     album: "Stars",
     albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-    duration: "4:15",
+    duration: "2:01",
     color: "indigo"
   },
   {
@@ -257,7 +257,7 @@ export const songs: Song[] = [
     album: "Stars",
     albumId: 5,
     coverUrl: "https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=500&q=80",
-    duration: "3:45",
+    duration: "1:47",
     color: "indigo"
   },
   {
@@ -267,7 +267,7 @@ export const songs: Song[] = [
     album: "Soft Skies",
     albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    duration: "4:07",
+    duration: "2:24",
     color: "pink"
   },
   {
@@ -277,7 +277,7 @@ export const songs: Song[] = [
     album: "Soft Skies",
     albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    duration: "4:20",
+    duration: "2:45",
     color: "pink"
   },
   {
@@ -287,7 +287,7 @@ export const songs: Song[] = [
     album: "Soft Skies",
     albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    duration: "5:00",
+    duration: "2:45",
     color: "pink"
   },
   {
@@ -297,7 +297,7 @@ export const songs: Song[] = [
     album: "Soft Skies",
     albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    duration: "4:35",
+    duration: "1:25",
     color: "pink"
   },
   {
@@ -307,7 +307,7 @@ export const songs: Song[] = [
     album: "Soft Skies",
     albumId: 6,
     coverUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    duration: "3:53",
+    duration: "2:39",
     color: "pink"
   }
 ];
