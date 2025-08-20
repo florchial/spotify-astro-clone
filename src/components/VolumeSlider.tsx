@@ -5,7 +5,7 @@ import * as SliderPrimitive from "@radix-ui/react-slider"
 
 import { cn } from "@/lib/utils"
 
-function Slider({
+function VolumeSlider({
   className,
   defaultValue,
   value,
@@ -60,4 +60,4 @@ function Slider({
   )
 }
 
-export { Slider }
+export { VolumeSlider }
