@@ -49,7 +49,7 @@ export function Player() {
                     defaultValue={[volume]}
                     max={100}
                     min={0}
-                    className="w-[130px]"
+                    className="w-[120px]"
                     onValueChange={changeVolume}
                 />
             </div>
