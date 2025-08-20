@@ -21,8 +21,8 @@ export function CardPlayButton({id}) {
             .then((res) => res.json())
             .then((data) => {
                 const { playlist, songs } = data
-                play()
                 setCurrentPlaylist({ playlist: playlist, songs: songs, song: songs[0] })
+                play()
             })
     }
 

@@ -5,7 +5,6 @@ import { Slider } from './Slider'
 export function SongSlider({ audio }) {
     const { song } = usePlayerStore(state => state.currentPlaylist);
     const [currentTime, setCurrentTime] = useState(0);
-    const [duration, setDuration] = useState(0);
 
     useEffect(() => {
         audio.current.addEventListener('timeupdate', handleTimeUpdate)
@@ -14,6 +13,14 @@ export function SongSlider({ audio }) {
         }
 
     })
+
+    useEffect(() => {
+        if (!song) {
+            setCurrentTime(0);
+            audio.current.currentTime = 0;
+        }
+
+    }, [song]);
 
     const handleTimeUpdate = () => {
         if (audio.current) {
