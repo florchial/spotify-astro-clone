@@ -25,15 +25,18 @@ export function VolumeControl() {
 
     return (
         <div className="flex items-center gap-2">
-            <div onClick={() => mute()}>
+            <div>
+                <button className="opacity-70 hover:opacity-100 transition" onClick={mute}>
                 {volume === 0? <MutedVolumeIcon/> :
                 volume <= 60 ? <MediumVolumeIcon /> :
                 <HighVolumeIcon />}
+                </button>
             </div>
 
             <div>
                 <Slider
                     defaultValue={[volume]}
+                    value={[volume]}
                     max={100}
                     min={0}
                     className="w-[120px]"
