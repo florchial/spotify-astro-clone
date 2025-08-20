@@ -1,13 +1,12 @@
 import { usePlayerStore } from "@/store/playerStore"
 
 export function SongTitle() {
-    const { currentState } = usePlayerStore(state => state)
-    const { song } = currentState
+    const { currentPlaylist } = usePlayerStore(state => state)
+    const { song } = currentPlaylist
 
     return (
         song ?
             <div className="flex items-center gap-4 relative overflow-hidden">
-
                 <picture className="w-16 h-16 bg-zinc-800 rounded-lg shadow-lg">
                     <img className="rounded-lg object-cover w-full h-full" src={song.coverUrl} alt={song.title} />
                 </picture>
@@ -21,7 +20,7 @@ export function SongTitle() {
                 </div>
 
             </div>
-            : <div className="flex items-center gap-5 relative overflow-hidden">
+            : <div className="flex items-center gap-4 relative overflow-hidden">
                 <picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
                     <img src="/images/placeholder-zinc.svg" alt="No song playing" />
                 </picture>

@@ -20,7 +20,7 @@ import { ClientRouter } from "astro:transitions";
         <slot />
       </main>
 
-      <footer class="[grid-area:player] min-h-[100px]">
+      <footer class="[grid-area:player]">
         <Player client:load transition:name="player" transition:persist/>
       </footer>
     </div>

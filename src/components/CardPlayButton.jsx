@@ -3,13 +3,13 @@ import { usePlayerStore } from "@/store/playerStore"
 
 export function CardPlayButton({id}) {
 
-    const { isPlaying, setIsPlaying, currentState, setCurrentState } = usePlayerStore(state => state)
+    const { isPlaying, setIsPlaying, currentPlaylist, setCurrentPlaylist } = usePlayerStore(state => state)
     
-    const isCurrentPlaylistPlaying = isPlaying && currentState?.playlist?.id === id
+    const isCurrentPlaylistPlaying = isPlaying && currentPlaylist?.playlist?.id === id
 
     const pause = () => setIsPlaying(false)
 
-    const play = (playlist) => {setIsPlaying(true)}
+    const play = () => {setIsPlaying(true)}
 
     const togglePlay = () => {
         if (isCurrentPlaylistPlaying) {
@@ -22,7 +22,7 @@ export function CardPlayButton({id}) {
             .then((data) => {
                 const { playlist, songs } = data
                 play()
-                setCurrentState({ playlist: playlist, songs: songs, song: songs[0] })
+                setCurrentPlaylist({ playlist: playlist, songs: songs, song: songs[0] })
             })
     }
 

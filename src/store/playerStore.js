@@ -2,9 +2,11 @@ import { create } from "zustand";
 
 export const usePlayerStore = create((set) => ({
     isPlaying: false,
-    currentState: { playlist: null, songs: [], song: null },
+    currentPlaylist: { playlist: null, songs: [], song: null },
     volume: 50, 
+    previousVolume: 50,
     setIsPlaying: (isPlaying) => set({ isPlaying }),
-    setCurrentState: (currentState) => set({ currentState: currentState }),
+    setCurrentPlaylist: (currentPlaylist) => set({ currentPlaylist: currentPlaylist }),
     setVolume: (volume) => set({volume: volume}),
+    setPreviousVolume: (previousVolume) => set({ previousVolume: previousVolume }),
 }))
