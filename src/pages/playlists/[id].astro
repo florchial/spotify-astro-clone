@@ -1,6 +1,9 @@
 ---
 import { playlistBy, artists, songsBy, amountOfSongs, duration } from "@/domain/playlists";
 import Layout from "@/layouts/Layout.astro";
+import ClockIcon from "@/icons/ClockIcon.astro";
+import { songs } from "@/domain/songs";
+import Index from "../index.astro";
 
 const { id } = Astro.params;
 
@@ -32,7 +35,6 @@ const playlist = playlistBy(id!);
                 {playlist?.title}
               </span>
             </h1>
-              <!--TODO: Pasar a grilla -->
             <div class="flex flex-1 items-end text-gray-400">
               <span transition:name={`playlist-${playlist.id}-artists`}>{artists(playlist)}</span>
             </div>
@@ -41,22 +43,37 @@ const playlist = playlistBy(id!);
             </div>
           </div>
         </header>
-
-        <main class="px-10">
-          <ul class="flex flex-col gap-4">
-            {songsBy(playlist).map(song => (
-              <li class="flex items-center gap-10">
-                <img src={song.coverUrl} alt={`Cover of ${song.title}`} class="w-16 h-16 object-cover" />
-                <div class="flex flex-col">
+        <section class="p-10">
+        <table class="table auto text-left min-w-full divide-y-2 divide-zinc-500/20 text-sm">
+          <thead>
+            <tr class="text-gray-400">
+              <th class="px-4 py-2">#</th>
+              <th class="px-4 py-2">TITLE</th>
+              <th class="px-4 py-2">ALBUM</th>
+              <th class="px-4 py-2"><ClockIcon/></th>
+            </tr>
+          </thead>
+          <tbody>
+            {songsBy(playlist).map((song, index) => (
+              <tr class="text-gray-400 hover:bg-zinc-300/10 transition duration-300">
+              <td class="px-4 py-2 w-5">{index + 1}</td>
+              <td class="px-4 py-2">
+                <div class="flex flex-row gap-5">
+                <img src={song.coverUrl} alt={`Cover of ${song.title}`} class="w-12 h-12 object-cover" />
+                <div class="flex flex-col justify-between">
                   <span class="text-white">{song.title}</span>
                   <span class="text-gray-400">{song.artist}</span>
                 </div>
-                  <span class="text-gray-500">{song.album}</span>
-                  <span class="text-gray-500">{song.duration}</span>
-              </li>
-            ))}
-          </ul>
-        </main>
+                </div>
+              </td>
+              <td class="px-4 py-2">{song.album}</td>
+              <td class="px-4 py-2">{song.duration}</td>
+              </tr>
+            ))
+          }
+          </tbody>
+        </table>
+        </section>
         <div class="relative z-10 px-6 py-10" />
         <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10"></div>
         
