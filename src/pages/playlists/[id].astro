@@ -2,8 +2,7 @@
 import { playlistBy, artists, songsBy, amountOfSongs, duration } from "@/domain/playlists";
 import Layout from "@/layouts/Layout.astro";
 import ClockIcon from "@/icons/ClockIcon.astro";
-import { songs } from "@/domain/songs";
-import Index from "../index.astro";
+import { CardPlayButton } from "@/components/CardPlayButton";
 
 const { id } = Astro.params;
 
@@ -19,7 +18,7 @@ const playlist = playlistBy(id!);
         style={`background-color: ${playlist.color.accent}`}
         transition:name={`playlist-${id}-card`}
       >
-        <header class="flex gap-6 p-10 font-light mt-12">
+        <header class="flex gap-4 p-5 font-light mt-10">
           <picture class="flex-none w-52 h-52">
             <img
               src={playlist.cover}
@@ -43,7 +42,10 @@ const playlist = playlistBy(id!);
             </div>
           </div>
         </header>
-        <section class="p-10">
+        <section class="p-5">
+        <div class="p-2 mb-1">
+              <CardPlayButton client:load id={playlist.id} />
+        </div>
         <table class="table auto text-left min-w-full divide-y-2 divide-zinc-500/20 text-sm">
           <thead>
             <tr class="text-gray-400">
