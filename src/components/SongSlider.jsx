@@ -13,10 +13,6 @@ export function SongSlider({ audio }) {
         }
     })
 
-    useEffect(() => {
-        setCurrentTime(0)
-    }, [song]);
-
     const updateTime = () => {
         if (audio.current) {
             setCurrentTime(audio.current.currentTime);
@@ -32,15 +28,15 @@ export function SongSlider({ audio }) {
     return (
         <div className="flex justify-between gap-5 items-center">
             <div className="w-8 justify-center">
-                <span className="opacity-50">{audio.current ? formatTime(audio.current.currentTime) : "0:00"}</span>
+                <span className="opacity-50">{song ? formatTime(currentTime) : "0:00"}</span>
             </div>
             <Slider
                 max={audio.current? audio.current.duration : 0}
                 min={0}
-                value={[currentTime]}
+                value={song ? [currentTime]: [0]}
                 className="w-[500px]"
-                onValueChange={(v) => {
-                    const newTime = v[0];
+                onValueChange={(value) => {
+                    const newTime = value[0];
                     setCurrentTime(newTime);
                     if (audio.current) {
                         audio.current.currentTime = newTime;
