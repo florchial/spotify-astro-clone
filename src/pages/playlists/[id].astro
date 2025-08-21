@@ -19,11 +19,11 @@ const playlist = playlistBy(id!);
     <Layout>
       <div
         id="playlist-container"
-        class="relative flex flex-col overflow-x-hidden gap-8"
+        class="relative flex flex-col overflow-x-hidden p-8 gap-6"
         style={`background-color: ${playlist.color.accent}`}
         transition:name={`playlist-${id}-card`}
       >
-        <header class="flex gap-4 p-5 font-light mt-10">
+        <header class="flex gap-4 font-light mt-10">
           <picture class="flex-none w-52 h-52">
             <img
               src={playlist.cover}
@@ -51,13 +51,14 @@ const playlist = playlistBy(id!);
             </div>
           </div>
         </header>
-        <section class="p-5">
-          <div class="p-2 mb-1">
+        <section>
+          <div>
             <PlaylistButton client:load id={playlist.id} />
           </div>
         </section>
-        <SongsTable client:load id={playlist.id}/>
-
+        <section>
+          <SongsTable client:load id={playlist.id} />
+        </section>
         <div class="relative z-10 px-6 py-10" />
         <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10" />
       </div>
