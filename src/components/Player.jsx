@@ -12,7 +12,6 @@ export function Player() {
     const { isPlaying, setIsPlaying, currentPlaylist, volume, setCurrentPlaylist } = usePlayerStore(state => state)
     const playingSong = currentPlaylist?.song
     const audioRef = useRef(null)
-
     const isNotPlayable = !currentPlaylist || !currentPlaylist.song || currentPlaylist.songs.length === 0
 
     useEffect(() => {
@@ -24,8 +23,11 @@ export function Player() {
     }, [isPlaying]);
 
     useEffect(() => {
-        if (!playingSong) return
-        playNewSong(playingSong)
+        if (!playingSong) {
+            cleanPlayer()
+        } else {
+            playNewSong(playingSong)
+        }
     }, [playingSong]);
 
     useEffect(() => {
@@ -33,13 +35,19 @@ export function Player() {
     }, [volume]);
 
     const togglePlay = () => {
-        const { song } = currentPlaylist
-        if (!song) return
+        if (!playingSong) return
         setIsPlaying(!isPlaying)
     }
 
+    const cleanPlayer = () => {
+        setIsPlaying(false)
+        pauseSong()
+    }
+
     const pauseSong = () => {
-        audioRef.current.pause()
+        if (audioRef.current) {
+            audioRef.current.pause()
+        }
     }
 
     const loadSong = (song) => {
@@ -48,7 +56,9 @@ export function Player() {
     }
 
     const playSong = () => {
-        audioRef.current.play()
+        if (audioRef.current) {
+            audioRef.current.play()
+        }
     }
 
     const playNewSong = (song) => {
@@ -66,7 +76,8 @@ export function Player() {
 
     const changeSong = (offset) => {
         if (isNotPlayable) return
-        setCurrentPlaylist({ ...currentPlaylist, song: findNextSong(offset) })
+        const newSong = findNextSong(offset)
+        setCurrentPlaylist({ ...currentPlaylist, song: newSong })
     }
 
     const nextSong = () => {

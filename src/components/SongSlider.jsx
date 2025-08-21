@@ -11,15 +11,10 @@ export function SongSlider({ audio }) {
         return () => {
             audio.current.removeEventListener('timeupdate', updateTime)
         }
-
     })
 
     useEffect(() => {
-        if (!song) {
-            setCurrentTime(0);
-            audio.current.currentTime = 0;
-        }
-
+        setCurrentTime(0)
     }, [song]);
 
     const updateTime = () => {
@@ -40,15 +35,15 @@ export function SongSlider({ audio }) {
                 <span className="opacity-50">{audio.current ? formatTime(audio.current.currentTime) : "0:00"}</span>
             </div>
             <Slider
-                max={audio.current ? audio.current.duration : 0}
+                max={audio.current? audio.current.duration : 0}
                 min={0}
                 value={[currentTime]}
                 className="w-[500px]"
-                onValueChange={(value) => {
-                    const newTime = value[0];
+                onValueChange={(v) => {
+                    const newTime = v[0];
                     setCurrentTime(newTime);
                     if (audio.current) {
-                      audio.current.currentTime = newTime;
+                        audio.current.currentTime = newTime;
                     }
                 }}
             />
