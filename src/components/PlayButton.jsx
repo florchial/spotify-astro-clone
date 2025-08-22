@@ -1,7 +1,7 @@
 import { Play, Pause } from "./Player"
 import { usePlayerStore } from "@/store/playerStore"
 
-export function PlaylistButton({id}) {
+export function PlayButton({id}) {
 
     const { isPlaying, setIsPlaying, currentPlaylist, setCurrentPlaylist } = usePlayerStore(state => state)
     

@@ -21,7 +21,7 @@ export function SongsTable({id}) {
     }, [currentPlaylist.song])
 
     const isSelected = (song) => {
-        return selectedSong? selectedSong.id === song.id: false
+        return selectedSong? currentPlaylist.playlist?.id === id && selectedSong.id === song.id: false
     } 
 
     return (

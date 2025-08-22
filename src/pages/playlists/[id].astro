@@ -6,7 +6,7 @@ import {
   duration,
 } from "@/domain/playlists";
 import Layout from "@/layouts/Layout.astro";
-import { PlaylistButton } from "@/components/PlaylistButton";
+import { PlayButton } from "@/components/PlayButton";
 import { SongsTable } from "@/components/SongsTable";
 
 const { id } = Astro.params;
@@ -53,7 +53,7 @@ const playlist = playlistBy(id!);
         </header>
         <section>
           <div>
-            <PlaylistButton client:load id={playlist.id} />
+            <PlayButton client:load id={playlist.id} />
           </div>
         </section>
         <section>
