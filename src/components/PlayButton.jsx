@@ -1,7 +1,7 @@
 import { Play, Pause } from "./Player"
 import { usePlayerStore } from "@/store/playerStore"
 
-export function PlayButton({id}) {
+export function PlayButton({id, style = "card-play-button rounded-full bg-green-500 p-3"}) {
 
     const { isPlaying, setIsPlaying, currentPlaylist, setCurrentPlaylist } = usePlayerStore(state => state)
     
@@ -33,7 +33,7 @@ export function PlayButton({id}) {
     }
 
     return (
-        <button className="card-play-button rounded-full bg-green-500 p-3" onClick={togglePlay}>
+        <button className={style} onClick={togglePlay}>
             {isCurrentPlaylistPlaying && isPlaying? <Pause /> : <Play />}
         </button>)
 }

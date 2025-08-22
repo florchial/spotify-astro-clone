@@ -19,11 +19,10 @@ const playlist = playlistBy(id!);
     <Layout>
       <div
         id="playlist-container"
-        class="relative flex flex-col overflow-x-hidden p-8 gap-6"
-        style={`background-color: ${playlist.color.accent}`}
-        transition:name={`playlist-${id}-card`}
-      >
-        <header class="flex gap-4 font-light mt-10">
+        class="relative flex flex-col overflow-x-hidden justify-between h-full px-4"
+        transition:name={`playlist-${id}-card`} 
+        style={`background: linear-gradient(to bottom, ${playlist.color.dark}, #18181b)`}>
+        <header class="flex gap-4 font-light p-4 mt-10">
           <picture class="flex-none w-52 h-52">
             <img
               src={playlist.cover}
@@ -51,16 +50,14 @@ const playlist = playlistBy(id!);
             </div>
           </div>
         </header>
-        <section>
+        <div class="h-full p-4">
           <div>
-            <PlayButton client:load id={playlist.id} />
+            <PlayButton client:load id={playlist.id}  style="card-play-button rounded-full bg-green-500 p-4"/>
           </div>
-        </section>
-        <section>
-          <SongsTable client:load id={playlist.id} />
-        </section>
-        <div class="relative z-10 px-6 py-10" />
-        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-10" />
+          <div class="mt-8">
+            <SongsTable client:load id={playlist.id} />
+          </div>
+        </div>
       </div>
     </Layout>
   )

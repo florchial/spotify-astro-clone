@@ -7,7 +7,7 @@ export const colors = {
   yellow: { accent: "#ffae00", dark: "#78350f" },
   green: { accent: "#21c872", dark: "#14532d" },
   teal: { accent: "#2ee9d7", dark: "#134e4a" },
-  blue: { accent: "#1e3a8a", dark: "#1e3a8a" },
+  blue: { accent: "#254bba", dark: "#1e3a8a" },
   indigo: { accent: "#394bd5", dark: "#312e81" },
   cyan: { accent: "#00bcd4", dark: "#007c91" },
   brown: { accent: "#8B4513", dark: "#4B2C20" },
