@@ -34,6 +34,13 @@ export function Player() {
         audioRef.current.volume = volume / 100
     }, [volume]);
 
+    useEffect(() => {
+        audioRef.current.addEventListener('ended', nextSong)
+        return () => {
+            audioRef.current.removeEventListener('ended', nextSong)
+        }
+    })
+
     const togglePlay = () => {
         if (!playingSong) return
         setIsPlaying(!isPlaying)
