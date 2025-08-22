@@ -4,7 +4,7 @@ const ClockIcon = () => (<svg width="24"  height="24"  viewBox="0 0 24 24"  fill
 const PlayingIcon = () => (<svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-antenna-bars-5"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 18l0 -3" /><path d="M10 18l0 -6" /><path d="M14 18l0 -9" /><path d="M18 18l0 -12" /></svg>)
 
 export function SongsTable({id}) {
-    const { currentPlaylist, setCurrentPlaylist } = usePlayerStore(state => state)
+    const { currentPlaylist } = usePlayerStore(state => state)
     const [songs, setSongs]  = useState([])
     const [selectedSong, setSelectedSong] = useState(null)
 
@@ -36,7 +36,7 @@ export function SongsTable({id}) {
           </thead>
           <tbody>
             {songs.map((song, index) => (
-              <tr className={isSelected(song)? "bg-zinc-500/20":"text-gray-400 hover:bg-zinc-300/10 transition duration-300"} key={song.id}>
+              <tr className={isSelected(song)? "bg-zinc-500/20":"text-gray-400"} key={song.id}>
               {isSelected(song)? 
                 <td className="text-green-500 px-2 py-2"><PlayingIcon/></td> :
                 <td className="px-4 py-2">{index + 1}</td>
