@@ -88,9 +88,17 @@ export function Player() {
 
     const changeSong = (offset) => {
         if (isNotPlayable) return
-        offset = shuffle ? Math.floor(Math.random() * amountOfSongs(currentPlaylist.playlist)) : offset
+        offset = shuffle ?  shuffleOfsset(currentPlaylist.playlist) : offset
         const newSong = findNextSong(offset)
         setCurrentPlaylist({ ...currentPlaylist, song: newSong })
+    }
+
+    const shuffleOfsset = (playlist) => {
+        let offset = 0
+        while (offset === 0) {
+            offset = Math.floor(Math.random() * amountOfSongs(playlist))
+        }
+        return offset
     }
 
     const nextSong = () => {
