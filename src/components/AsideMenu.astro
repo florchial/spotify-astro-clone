@@ -14,21 +14,20 @@ import SideMenuPlaylistItem from "@/components/SideMenuPlaylistItem.astro";
         <HomeIcon />
         Home
       </SideMenuItem>
-      <SideMenuItem href="/">
-        <SearchIcon />
-        Search
-      </SideMenuItem>
     </ul>
   </div>
   <div class="p-2 rounded-lg bg-zinc-900 flex-1">
     <ul>
-      <SideMenuItem href="/">
+      <span
+        class="flex text-zinc-400 gap-4 items-center py-2">
         <LibraryIcon />
         Your Library
-      </SideMenuItem>
-      {playlists.map((playlist) => (
-        <SideMenuPlaylistItem playlist={playlist} />
-      ))}
+      </span>
+      {
+        playlists.map((playlist) => (
+          <SideMenuPlaylistItem playlist={playlist} />
+        ))
+      }
     </ul>
   </div>
 </nav>
