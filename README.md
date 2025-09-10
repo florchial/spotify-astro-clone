@@ -1,91 +1,82 @@
-# Spotify Clone
+# 🎵 Spotify Clone
 
-A simple Spotify-inspired music app built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+A Spotify-inspired music player built with modern web technologies.
+
+## ✨ App Screenshots
+
+![Home](public/images/music-player-home.png)
+![Playlist view](public/images/music-player.png)
 
 ## 🚀 Features
 
-- Responsive layout with sidebar, main content, and player footer
-- Playlist details page with dynamic routing (`/playlists/[id]`)
-- Interactive UI components
-- Color themes for playlists
-- Styled using Tailwind CSS
-- Modular component structure
+- **Real-time Music Playback**: Full audio controls including play, pause, skip, and volume
+- **Modern UI**: Built with Tailwind CSS and smooth transitions
+- **State Management**: Using Zustand for efficient state handling
+- **Multi-framework Integration**: Combines Astro, React and Svelte components
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build/) - Web Framework
+- [React](https://reactjs.org/) - UI Components
+- [Svelte](https://svelte.dev/) - UI Components
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Zustand](https://github.com/pmndrs/zustand) - State Management
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/florchial/spotify-astro-clone.git
+
+# Navigate to project folder
+cd spotify-astro-clone
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 🏗️ Project Structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── music/           # Audio files
+│   └── images/          # Images and icons
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── AsideMenu.astro
-│   │   ├── PlaylistCard.astro
-│   │   ├── SideMenuItem.astro
-│   │   └── SideMenuPlaylistItem.astro
-│   ├── domain/
-│   │   ├── colors.ts
-│   │   ├── playlists.ts
-│   │   └── songs.ts
-│   ├── icons/
-│   │   ├── HomeIcon.astro
-│   │   ├── LibraryIcon.astro
-│   │   └── SearchIcon.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   ├── pages/
-│   │   ├── index.astro
-│   │   └── playlists/
-│   │       └── [id].astro
-│   └── styles/
-│       └── global.css
-├── package.json
-└── astro.config.mjs
+│   ├── components/      # UI Components
+│   ├── domain/         # Business logic & types
+│   ├── icons/          # SVG icons
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # Route components
+│   └── store/          # State management
 ```
 
-## 🏃🏻‍♀️ Getting Started
+## 🎮 Usage
 
-1. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-
-2. **Run the development server:**
-   ```sh
-   npm run dev
-   ```
-
-3. **Build for production:**
-   ```sh
-   npm run build
-   ```
-
-4. **Preview the production build:**
-   ```sh
-   npm run preview
-   ```
-
-## 🛠️ Technologies
-
-- [Astro](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## 👩🏻‍💻 Usage
-
-- Browse playlists from the sidebar and main view.
-- Click on a playlist to view its details, including cover, artists, song list, total duration, and song count.
-- Songs are filtered and grouped by playlist and album.
-
-## 📊 Data Structure
-
-Each playlist references albums and artists, and each song includes metadata such as title, artist, album, duration, and color.
+1. Browse available playlists in the sidebar
+2. Click on a playlist to view its songs
+3. Use the player controls at the bottom to:
+   - Play/Pause songs
+   - Skip tracks
+   - Adjust volume
+   - Toggle shuffle/repeat
 
 ## 🎶 Music Data
 
 - The app includes a collection of invented songs with metadata such as title, artist, album, and duration for illustration purposes. 
 - The data is stored in a TypeScript file for easy access and manipulation.
 - All images and music data are for educational use only. Music: [Purple Planet Music](www.purple-planet.com)
+
+## 🙏 Acknowledgments
+
+- Design inspired by [Spotify](https://spotify.com)
+- Music provided by [Purple Planet Music](https://www.purple-planet.com)
+- Icons from [Tabler Icons](https://tabler-icons.io)
+- Based on tutorial by [midudev](https://github.com/midudev)
+
 
 ## 📄 License
 
