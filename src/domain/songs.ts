@@ -31,16 +31,6 @@ export const songs: Song[] = [
     color: "orange"
   },
   {
-    id: 3,
-    title: "Ocean Breeze",
-    artist: "The Waves",
-    album: "Evening Glow",
-    albumId: 1,
-    coverUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80",
-    duration: "30:12",
-    color: "orange"
-  },
-  {
     id: 4,
     title: "Forest Whisper",
     artist: "The Waves",
